@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Tim's tech notes</title>
+  <meta name="author" content="Tim Rae">
+
+  
+  <meta name="description" content="Introduction This page contains a review of four of the big internet service providers in Japan, all based on NTT fiber. All of the ISPs showed &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://timrae.github.io/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Tim's tech notes" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Tim's tech notes</a></h1>
+  
+    <h2>My place to store things that seem like they should be recorded somewhere</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="timrae.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/12/22/japan-isp-review/">Japanese ISP Review</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-12-22T10:30:02+09:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>10:30 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Introduction</h2>
+
+<p>This page contains a review of four of the big internet service providers in Japan, all based on NTT fiber. All of the ISPs showed approximately the same behavior during off-peak times, but during the peak time slot of 9 p.m. to midnight on weeknights they showed <strong>vastly different performance</strong>. The measurements below indicate that many ISPs in Japan are doing <strong>extremely heavy packet shaping</strong> during peak usage periods, presumably to cut costs on infrastructure. With the exception of OCN (which is fantastic), I found all of the ISPs to be unusable, and strongly caution against using them.</p>
+
+<p>このページではNTT光回線をご利用して、４つのプロバイダーをレビューさせていただきます。夜間帯以外には差がほとんどなかったということで、21時～24時の夜間帯のみの測定や評価を発表します。下記のデータによって、日本ではビデオストリーミングやp2pのトラフィックシェーピングを非常に厳しく行っているプルバイダーが大勢いるという結論ができるでしょう。この４つのプロバイダーの中で夜間帯にOCN以外のISPは全て使えないぐらい遅かったです。レビュー内容自体は英語ですが、誰かに役に立てば嬉しいと思っていますので、是非ご参考ください。</p>
+
+<h2>Choice of ISPs</h2>
+
+<p>These are the ISPs that I measured. I encourage any readers of this to send me their own reviews for inclusion.</p>
+
+<ul>
+<li>Asahi.net</li>
+<li>Biglobe</li>
+<li>Yahoo</li>
+<li>OCN</li>
+</ul>
+
+
+<h2>Motivation</h2>
+
+<p>When I first moved into my current apartment in 2013, I signed up with Asahi.net as my provider because they were the cheapest one that didn&rsquo;t look dodgy. The service quality was fine, and they actually had <em>really</em> good customer service, so I didn&rsquo;t have any reason to change. Then one day in September 2015, I got a notice in the mail that the cost was going to increase from 550yen to 700yen from December. Shortly after that, I noticed that <em>the quality of service dropped significantly</em>, to the point that my internet actually became unusable.</p>
+
+<p>I therefore decided to change ISP in the hope that I could fix my internetz. I had to try <em>3 different ISPs</em> until I found one (OCN) that was acceptable for my purposes. All of the other ISPs are doing such heavy traffic shaping on streaming video content and p2p that they are simply unusable. Since you have to pay for a whole month of usage for every ISP that you sign up with, I was able to switch between all four ISPs in real-time to evaluate their relative service quality. During this process I decided to take some actual measurements, and publish the data here online for the benefit of the next generation of Otaku.</p>
+
+<h2>Testing methodology</h2>
+
+<p>Unfortunately a lot of people on the internet seem to believe that their speedtest.net linespeed results are a good figure of merit for evaluating how good their ISP is. In fact, many ISPs do heavy traffic shaping (i.e. limit the speed of some traffic such as video and p2p), and depending on when and what you use the internet for, the actual quality of service that you experience may vary greatly. Therefore rather than simply looking at the Ookla speed test results, it is far more useful to do a &ldquo;stress test&rdquo; that unveils the <strong>worst case</strong> quality of service.</p>
+
+<p>To this end, I have benchmarked each of the ISPs using the follow four tests done between 9 p.m. and 11 p.m. (the peak usage time slot) on the 21st December 2015 from my house in Setagaya-ku, Tokyo. Similar measurements done on different days gave very similar results, so I think this data is probably pretty representative of the worst case performance of these ISPs within the Tokyo 23 wards at the time of writing.</p>
+
+<ol>
+<li>Ookla speed test results to a server in Kanto (tests base linespeed results)</li>
+<li>Ookla speed test results to a server in San Jose, California (tests uplink international traffic capacity)</li>
+<li>Time taken to download the 1.1GB <a href="http://www.ubuntu.com/download/alternative-downloads">Ubuntu-15.10 torrent</a> (tests traffic shaping of p2p content). Note: this test is completely legal, and many linux distributions use p2p to release new versions.</li>
+<li>Maximum video streaming quality (1080p HD|720p HD|480p|360p) that can be acheived from the Anime streaming site <a href="http://www.crunchyroll.com/hunter-x-hunter/episode-1-departure-x-and-x-friends-584886">Crunchyroll</a> (tests traffic shaping on international streaming video sites). Note: it&rsquo;s necessary to use a &ldquo;smart DNS&rdquo; to access this site, or in my case I used the Google Chrome plugin &ldquo;Crunchyroll unblocker&rdquo;</li>
+</ol>
+
+
+<h2>Notes about cost</h2>
+
+<p>Since I&rsquo;ve been living in my apartment for more than 2 years, I no longer get the discounts like 2年割, so all of the prices that I give are the non-discounted versions. In Japan you have to pay a monthly usage cost to NTT to use their fiber optic network. In my case that costs 3750yen/month + tax for the &ldquo;マンションタイプ・ミニ&rdquo; plan, which means there are 3 - 6 other people in my building with an NTT fiber contract. In addition to this monthly fee to NTT, you have to have a separate contract with an ISP that provides the backbone from NTT to the rest of the internet. The costs I give here are for the ISP portion of the cost of my internet connection.</p>
+
+<p>Another thing that I should mention is that the cancellation fee of most of these ISPs is free (i.e. you can join, test it, and then cancel immediately and only have to pay the first month usage fee), but you often have to actually <strong>call them</strong> on the telephone and explicitly request a contract that you can cancel for free. With Yahoo and Biglobe I made the silly mistake of doing it on the internet, and it looks like I&rsquo;ll have to pay a 5000yen fee to each of them for cancelling.</p>
+
+<h2>Measurement results</h2>
+
+<p>Now to the actual review. I&rsquo;ll give the measurement results in alphabetical order of the ISP names.</p>
+
+<h3>Asahi.net</h3>
+
+<ol>
+<li>Cost: 700yen/month + tax</li>
+<li>Linespeed to Tokyo: 82Mb/s down | 62Mb/s up</li>
+<li>Linespeed to California: 45Mb/s down | 91Mb/s up</li>
+<li>Ubuntu Torrent download time: <strong>Did not connect</strong> = 0Mb/s @ 21:30</li>
+<li>Crunchyroll video streaming: 1080p unusable. 720p usable but sometimes stopped to buffer. 480p and below was OK.</li>
+</ol>
+
+
+<p><img src="/images/isp/asahi-2140-ca.png"></p>
+
+<p>Video streaming was working a lot better for Asahi.net than it did on previous testing days, but still not great, and as you can see they have completely blocked torrent usage during these peak usage times.</p>
+
+<p><strong>Overall rating:</strong> D for blocking the Linux torrent.</p>
+
+<h3>Biglobe (NEC)</h3>
+
+<ol>
+<li>Cost: 1200yen/month + tax</li>
+<li>Linespeed to Tokyo: 93Mb/s down | 94Mb/s up</li>
+<li>Linespeed to California: 25Mb/s down | 92Mb/s up</li>
+<li>Ubuntu Torrent download time: <strong>Did not connect</strong> = 0Mb/s @ 21:30</li>
+<li>Crunchyroll video streaming: 1080p, 720p unusable. 480p usable but sometimes stopped for buffering. 360p was OK.</li>
+</ol>
+
+
+<p><img src="/images/isp/biglobe-2131-ca.png"></p>
+
+<p>This is the first ISP that I changed to after Asahi. Their line speeds are pretty good, but unfortunately they seem to do the heaviest traffic shaping out of all the providers that I tried.</p>
+
+<p><strong>Overall rating:</strong> D for blocking the Linux torrent.</p>
+
+<h3>OCN (NTT)</h3>
+
+<ol>
+<li>Cost: 700yen/month + tax</li>
+<li>Linespeed to Tokyo: 91Mb/s down | 80Mb/s up</li>
+<li>Linespeed to California: 42Mb/s down | 94Mb/s up</li>
+<li>Ubuntu Torrent download time: 3.5 minutes = 42Mb/s @ 21:10</li>
+<li>Crunchyroll video streaming: 1080p no problem</li>
+</ol>
+
+
+<p><img src="/images/isp/ocn-2117-ca.png"></p>
+
+<p>Finally! This was the last ISP that I tried, and I was very impressed. Download and upload speeds were excellent. The line speed to California was 42Mb/s during peak traffic times, international streaming video was smooth with no buffering at all, and the ubuntu torrent downloaded at the same rate as the line speed. From this testing I would have to conclude that they do little to no traffic shaping, and they have probably invested <strong>a lot</strong> into maintaining strong uplink international traffic capacity. The only limit that I&rsquo;m aware of with OCN is that they apparently have a 30GB/day download limit.</p>
+
+<p><strong>Overall rating:</strong> I give OCN an A because they are cheap, and have a perfect quality of service.</p>
+
+<h3>YahooBB (Softbank)</h3>
+
+<ol>
+<li>Cost: 950yen/month + tax</li>
+<li>Linespeed to Tokyo: 33Mb/s down | 44Mb/s up</li>
+<li>Linespeed to California: 5Mb/s down | 81Mb/s up</li>
+<li>Ubuntu Torrent download time: 12 minutes = 12.2Mb/s @ 22:00</li>
+<li>Crunchyroll video streaming: 1080p, 720p, 480p unusable. 360p usable but sometimes stopped for buffering.</li>
+</ol>
+
+
+<p><img src="/images/isp/softbank-2154-ca.png"></p>
+
+<p>I had read good things on the internet about Yahoo in Japanese saying that they do very little traffic shaping, so decided to give me a try after the disappointment with Biglobe. I had actually used them for a few years in my previous apartment with good results, so I had high expectations. Unfortunately, while they indeed seemed to do very little packet shaping, their base line speed was so terrible that this point was rather meaningless. Video streaming was the worst out of all of the ISPs, and while the torrent at least worked, a 5Mb/s international linespeed is simply unacceptable.</p>
+
+<p><strong>Overall rating:</strong> F for the poor uplink</p>
+
+<h2>Summary</h2>
+
+<h3>Rankings</h3>
+
+<ul>
+<li>OCN: <strong>A</strong></li>
+<li>Asahi.net: <strong>D</strong></li>
+<li>Biglobe: <strong>D</strong></li>
+<li>Yahoo BB: <strong>F</strong></li>
+</ul>
+
+
+<h3>Points of interest</h3>
+
+<ul>
+<li>OCN was by far the best provider that I tried</li>
+<li>All of the other providers were rubbish</li>
+<li>The service cost appears to be uncorrelated with the service quality</li>
+<li>Aggresive traffic shaping is a big problem with Japanese ISPs</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/12/22/japan-isp-review/">Japanese ISP Review</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/103146747887208505644?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Tim Rae -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
