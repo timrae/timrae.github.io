@@ -1,93 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Tim's tech notes</title>
-  <meta name="author" content="Tim Rae">
-
-  
-  <meta name="description" content="Introduction This page contains a review of four of the big internet service providers in Japan, all based on NTT fiber. All of the ISPs showed &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://timrae.github.io/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tim's tech notes" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Tim's tech notes</a></h1>
-  
-    <h2>My place to store things that seem like they should be recorded somewhere</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="sitesearch" value="timrae.github.io">
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[Tim's tech notes]]></title>
+  <link href="http://timrae.github.io/atom.xml" rel="self"/>
+  <link href="http://timrae.github.io/"/>
+  <updated>2015-12-22T19:00:36+09:00</updated>
+  <id>http://timrae.github.io/</id>
+  <author>
+    <name><![CDATA[Tim Rae]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2015/12/22/japan-isp-review/">Japanese ISP Review</a></h1>
-    
-    
-      <p class="meta">
-        
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
-
-
-
-<time class='entry-date' datetime='2015-12-22T10:30:02+09:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>10:30 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Introduction</h2>
+  
+  <entry>
+    <title type="html"><![CDATA[Japanese ISP Review]]></title>
+    <link href="http://timrae.github.io/blog/2015/12/22/japan-isp-review/"/>
+    <updated>2015-12-22T10:30:02+09:00</updated>
+    <id>http://timrae.github.io/blog/2015/12/22/japan-isp-review</id>
+    <content type="html"><![CDATA[<h2>Introduction</h2>
 
 <p>This page contains a review of four of the big internet service providers in Japan, all based on NTT fiber. All of the ISPs showed approximately the same behavior during off-peak times, but during the peak time slot of 9 p.m. to midnight on weeknights they showed <strong>vastly different performance</strong>. The measurements below indicate that many ISPs in Japan are doing <strong>extremely heavy packet shaping</strong> during peak usage periods, presumably to cut costs on infrastructure. With the exception of OCN (which is fantastic), I found all of the ISPs to be unusable, and strongly caution against using them.</p>
 
@@ -146,7 +77,7 @@
 </ol>
 
 
-<p><img src="/images/isp/asahi-2140-ca.png"></p>
+<p><img src="http://timrae.github.io/images/isp/asahi-2140-ca.png"></p>
 
 <p>Video streaming was working a lot better for Asahi.net than it did on previous testing days, but still not great, and as you can see they have completely blocked torrent usage during these peak usage times.</p>
 
@@ -163,7 +94,7 @@
 </ol>
 
 
-<p><img src="/images/isp/biglobe-2131-ca.png"></p>
+<p><img src="http://timrae.github.io/images/isp/biglobe-2131-ca.png"></p>
 
 <p>This is the first ISP that I changed to after Asahi. Their line speeds are pretty good, but unfortunately they seem to do the heaviest traffic shaping out of all the providers that I tried.</p>
 
@@ -180,7 +111,7 @@
 </ol>
 
 
-<p><img src="/images/isp/ocn-2117-ca.png"></p>
+<p><img src="http://timrae.github.io/images/isp/ocn-2117-ca.png"></p>
 
 <p>Finally! This was the last ISP that I tried, and I was very impressed. Download and upload speeds were excellent. The line speed to California was 42Mb/s during peak traffic times, international streaming video was smooth with no buffering at all, and the ubuntu torrent downloaded at the same rate as the line speed. From this testing I would have to conclude that they do little to no traffic shaping, and they have probably invested <strong>a lot</strong> into maintaining strong uplink international traffic capacity. The only limit that I&rsquo;m aware of with OCN is that they apparently have a 30GB/day download limit.</p>
 
@@ -197,7 +128,7 @@
 </ol>
 
 
-<p><img src="/images/isp/softbank-2154-ca.png"></p>
+<p><img src="http://timrae.github.io/images/isp/softbank-2154-ca.png"></p>
 
 <p>I had read good things on the internet about Yahoo in Japanese saying that they do very little traffic shaping, so decided to give me a try after the disappointment with Biglobe. I had actually used them for a few years in my previous apartment with good results, so I had high expectations. Unfortunately, while they indeed seemed to do very little packet shaping, their base line speed was so terrible that this point was rather meaningless. Video streaming was the worst out of all of the ISPs, and while the torrent at least worked, a 5Mb/s international linespeed is simply unacceptable.</p>
 
@@ -224,94 +155,7 @@
 <li>Aggresive traffic shaping is a big problem with Japanese ISPs</li>
 </ul>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2015/12/22/japan-isp-review/">Japanese ISP Review</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-<section class="googleplus">
-  <h1>
-    <a href="https://plus.google.com/103146747887208505644?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Tim Rae -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id; js.async = true;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-  <script type="text/javascript">
-    (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    })();
-  </script>
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
