@@ -1,19 +1,20 @@
-schedule:
-    - cron: "0 9 1 Apr, Oct *" # run every 6 months on 1st Apr/Oct
-
+name: Jekyll auto-updater
+on:
+  schedule:
+    - cron: 0 9 1 Apr, Oct *
 jobs:
-Bundle update:
+  Bundle update:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: ruby/setup-ruby@v1
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+      - run: bundle update jekyll
         with:
-          ruby-version: '3.3' # Not needed with a `.ruby-version` or `.tool-versions`
+          ruby-version: "3.3"
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - run: bundle update jekyll
-    - uses: peter-evans/create-pull-request@v7
+      - uses: peter-evans/create-pull-request@v7
         with:
           commit-message: bundle update jekyll
-          base: main
+          base: master
           branch: jekyll_update
           delete-branch: true
