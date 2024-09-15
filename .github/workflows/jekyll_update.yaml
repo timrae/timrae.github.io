@@ -9,10 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
-      - run: bundle update jekyll
         with:
           ruby-version: "3.3"
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - run: bundle update jekyll
       - uses: peter-evans/create-pull-request@v7
         with:
           commit-message: bundle update jekyll
