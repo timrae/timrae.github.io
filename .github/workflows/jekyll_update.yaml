@@ -1,5 +1,6 @@
 name: Jekyll auto-updater
 on:
+  workflow_dispatch: # allow manual triggering
   schedule:
     - cron: '0 9 1 Apr,Oct *'
 jobs:
